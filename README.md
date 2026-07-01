@@ -45,6 +45,7 @@ An automated, serverless data engineering pipeline that ingests raw CSV sales da
 
 ## Jobs & Pipelines
 <img width="310" height="235" alt="image" src="https://github.com/user-attachments/assets/79770e1e-5299-4fe1-9bfe-1f1c0df55c5f" />
+
 ---
 
 ## ⚙️ Deployment & Cost Optimizations
