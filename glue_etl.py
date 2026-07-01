@@ -66,7 +66,7 @@ glueContext.write_dynamic_frame.from_options(
     frame = output_dynamic_frame,
     connection_type = "s3",
     connection_options = {
-        "path": "s3://shubhs-s3-data/airbnb_clean/"  
+        "path": "s3://*****s-s3-data/airbnb_clean/"  
     },
     format = "parquet"
 )
