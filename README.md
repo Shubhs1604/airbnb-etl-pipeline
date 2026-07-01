@@ -12,6 +12,12 @@ An automated, serverless data engineering pipeline that ingests raw CSV sales da
 4. **Lakehouse Analysis:** Databricks Auto Loader (`cloudFiles`) detects the newly appended Parquet structure from the unified storage bucket and processes it through incremental Bronze and Silver Delta Live Tables (DLT) layer states.
 
 ---
+## 📐 Architecture Overview
+
+![Airbnb ETL Pipeline Architecture](architecture.png)
+
+1. **Ingestion Trigger:** An AWS Lambda function intercepts S3 `ObjectCreated` events...
+---
 
 ## 📂 Project Repository Structure
 
