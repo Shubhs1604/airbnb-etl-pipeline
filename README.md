@@ -43,6 +43,8 @@ An automated, serverless data engineering pipeline that ingests raw CSV sales da
 *   **Bronze Layer:** Configured with Auto Loader to isolate state parsing logs dynamically.
 *   **Silver Layer:** Applies data-quality assertions (`dlt.expect_or_drop`) to ensure downstream transactional integrity without reprocessing legacy partitions.
 
+## Jobs & Pipelines
+<img width="310" height="235" alt="image" src="https://github.com/user-attachments/assets/79770e1e-5299-4fe1-9bfe-1f1c0df55c5f" />
 ---
 
 ## ⚙️ Deployment & Cost Optimizations
@@ -51,3 +53,6 @@ To keep implementation operations highly cost-effective, the following patterns 
 *   **Targeted Processing:** Instead of re-scanning the entire S3 history on every execution cycle, the workflow targets a single runtime path parameter string (`--new_s3_file`), driving Glue compute intervals to absolute minimums.
 *   **Minimal Worker Profiles:** Configured to run on minimal scalable architectures using explicit worker thresholds (G.1X / 2 Workers) to maintain a low billing profile.
 *   **Triggered Pipeline Semantics:** Databricks pipelines utilize explicit triggered scheduler states instead of continuous active configurations to eliminate idle runtime server hours.
+
+
+
