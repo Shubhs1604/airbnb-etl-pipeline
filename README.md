@@ -11,13 +11,8 @@ An automated, serverless data engineering pipeline that ingests raw CSV sales da
 3. **Data Transformation:** The AWS Glue script standardizes date/timestamp schemas, handles data quality metrics (e.g., pre-computing financial metrics and handling null values), and outputs optimized Parquet configurations.
 4. **Lakehouse Analysis:** Databricks Auto Loader (`cloudFiles`) detects the newly appended Parquet structure from the unified storage bucket and processes it through incremental Bronze and Silver Delta Live Tables (DLT) layer states.
 
----
-## 📐 Architecture Overview
+---<img width="1408" height="768" alt="image_178b5313" src="https://github.com/user-attachments/assets/4c821f0b-55dc-422f-89d1-070400c0e509" />
 
-![Airbnb ETL Pipeline Architecture](architecture.png)
-
-1. **Ingestion Trigger:** An AWS Lambda function intercepts S3 `ObjectCreated` events...
----
 
 ## 📂 Project Repository Structure
 
